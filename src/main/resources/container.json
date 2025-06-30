@@ -1,0 +1,72 @@
+
+    {
+        "masterData": {
+            "containerNumber": "MSKU8901234",
+            "length": "20",
+            "height": "8.6",
+            "isoCode": "22G1"
+        },
+        "voyageData": {
+            "voyagenumber": "513W",
+            "empty": false,
+            "dangerousGoods": false,
+            "shippingCompanyCode": "MAE",
+            "vessel": "EMMA MAERSK",
+            "vesselIMO": "9321483",
+            "portOfOrigin": {
+                "name": "Halifax",
+                "code": "CAHAL"
+            },
+            "terminalOfOrigin": {
+                "name": "Halterm Container Terminal",
+                "code": "CAHALHAL"
+            },
+            "portOfDestination": {
+                "name": "Wilhelmshaven",
+                "code": "DEWVN"
+            },
+            "terminalOfDestination": {
+                "name": "Eurogate Container Terminal WHV",
+                "code": "DEWVNCT"
+            }
+        },
+        "historicalStatusUpdates": [
+            {
+                "type": "Terminal In",
+                "transportMode": "RAIL",
+                "timestamp": "2025-05-28T07:15:00Z"
+            },
+            {
+                "type": "Loaded",
+                "timestamp": "2025-05-29T04:45:00Z",
+                "additionalInfo": "Halterm Container Terminal"
+            },
+            {
+                "type": "Departure",
+                "transportMode": "MARITIME",
+                "timestamp": "2025-05-29T14:30:00Z"
+            },
+            {
+                "type": "Commercial Clearance Status",
+                "timestamp": "2025-06-29T10:10:00Z",
+                "additionalInfo": "Cleared by Shipping Company"
+            },
+            {
+                "type": "Arrival",
+                "timestamp": "2025-06-29T14:30:00Z",
+                "transportMode": "MARITIME",
+                "additionalInfo": "EMMA MAERSK"
+            },
+            {
+                "type": "Discharged",
+                "timestamp": "2025-06-30T23:10:00Z",
+                "additionalInfo": "Eurogate Container Terminal WHV"
+            }
+        ],
+        "predictions": {
+            "estimatedTimeOfAvailability": "2025-07-01T07:00:00Z",
+            "lastUpdated": "2025-06-29T23:10:00Z"
+        },
+        "lastUpdate": "2025-06-30T23:10:00Z",
+        "source": "ISL Containerstatus Service"
+    }
