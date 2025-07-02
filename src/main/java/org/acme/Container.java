@@ -1,70 +1,47 @@
 package org.acme;
 
-import java.util.ArrayList;
 import java.util.Date;
 
+import org.acme.classes.MasterData;
+import org.acme.classes.VoyageData;
+import org.acme.classes.historicalData;
+import org.acme.classes.portDestination;
+import org.acme.classes.portOrigin;
+import org.acme.classes.predictionData;
+import org.acme.classes.terminalDestination;
+import org.acme.classes.terminalOrigin;
+
 public class Container {
-
-
-    public class HistoricalStatusUpdate {
-        public String type;
-        public String transportMode;
-        public Date timestamp;
-        public String additionalInfo;
+    
+    public Container(MasterData masterData, portOrigin portOrigin, terminalOrigin terminalOrigin,
+            portDestination portDestination, terminalDestination terminalDestination,
+            VoyageData voyageData, Date lastUpdate, String source, historicalData historicalData, predictionData predictiondata) {
+        this.masterData = masterData;
+        this.portOrigin = portOrigin;
+        this.portDestination = portDestination;
+        this.terminalOrigin = terminalOrigin;
+        this.terminalDestination = terminalDestination;
+        this.voyageData = voyageData;
+        this.lastUpdate = lastUpdate;
+        this.source = source;
+        this.historicalData = historicalData;
+        this.predictionData = predictiondata;
     }
-
-    public class MasterData {
-        public String containerNumber;
-        public String length;
-        public String height;
-        public String isoCode;
-    }
-
-    public class PortOfDestination {
-        public String name;
-        public String code;
-    }
-
-    public class PortOfOrigin {
-        public String name;
-        public String code;
-    }
-
-    public class Predictions {
-        public Date estimatedTimeOfAvailability;
-        public Date lastUpdated;
-    }
-
-    public class TerminalOfDestination {
-        public String name;
-        public String code;
-    }
-
-    public class TerminalOfOrigin {
-        public String name;
-        public String code;
-    }
-
-    public class VoyageData {
-        public String voyagenumber;
-        public boolean empty;
-        public boolean dangerousGoods;
-        public String shippingCompanyCode;
-        public String vessel;
-        public String vesselIMO;
-        public PortOfOrigin portOfOrigin;
-        public TerminalOfOrigin terminalOfOrigin;
-        public PortOfDestination portOfDestination;
-        public TerminalOfDestination terminalOfDestination;
-    }
-
-
+    
+    
     public MasterData masterData;
+    public portOrigin portOrigin;
+    public portDestination portDestination;
+    public terminalOrigin terminalOrigin;
+    public terminalDestination terminalDestination;
     public VoyageData voyageData;
-    public ArrayList<HistoricalStatusUpdate> historicalStatusUpdates;
-    public Predictions predictions;
     public Date lastUpdate;
     public String source;
+    public historicalData historicalData;
+    public predictionData predictionData;
+
 
     
+
+
 }
